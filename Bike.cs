@@ -19,7 +19,7 @@ namespace T3Activitats
         {
             if (string.IsNullOrEmpty(type))
             {
-                throw new ArgumentException("Type cannot be null or empty");
+                throw new ArgumentException("Type cannot be null or empty ;(");
             }
             this.Type = type;
         }
