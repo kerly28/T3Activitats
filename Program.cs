@@ -6,18 +6,23 @@ namespace T3Activitats
     {
         public static void Main()
         {
-            Card card = new Card(1, "Hearts");
-            Card card1 = new Card(3, "Clover");
-            Card card2 = new Card(5, "Diamonds");
-            Card card3 = new Card(7, "Spades");
-            
-            //Mostrar cartes
-          
-            Console.WriteLine("\n Card 1: " + card.GetNumber() + " of " + card.GetSuit());
-            Console.WriteLine("\n Card 2: " + card1.GetNumber() + " of " + card1.GetSuit());
-            Console.WriteLine("\n Card 3: " + card2.GetNumber() + " of " + card2.GetSuit());
-            Console.WriteLine("\n Card 4: " + card3.GetNumber() + " of " + card3.GetSuit());
+            try
+            {
+                Lamp lamp1 = new Lamp(true, "Red");
+                Lamp lamp2 = new Lamp(false, ""); 
+                Lamp lamp3 = new Lamp(true, "Green");
 
+                // Missatges
+
+                Console.WriteLine("Lamp 1: IsOn = " + lamp1.GetIsOn() + ", Color = " + lamp1.GetColor());
+                Console.WriteLine("Lamp 2: IsOn = " + lamp2.GetIsOn() + ", Color = " + lamp2.GetColor());
+                Console.WriteLine("Lamp 3: IsOn = " + lamp3.GetIsOn() + ", Color = " + lamp3.GetColor());
+            }
+            catch (ArgumentException ex)
+            {
+                
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }
