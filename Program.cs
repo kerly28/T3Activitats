@@ -6,24 +6,23 @@ namespace T3Activitats
     {
         public static void Main()
         {
-            // gatito
-            Cat myCat = new Cat("Luchy", 3, "Snowshoe", "Salmon");
+            try
+            {
+                Lamp lamp1 = new Lamp(true, "Red");
+                Lamp lamp2 = new Lamp(false, "");
+                Lamp lamp3 = new Lamp(true, "Green");
 
-            // Informacio Luchy
-            Console.WriteLine("Cat Info:");
-            Console.WriteLine("Name: " + myCat.GetName());
-            Console.WriteLine("Age: " + myCat.GetAge());
-            Console.WriteLine("Breed: " + myCat.GetBreed());
-            Console.WriteLine("Favorite Food: " + myCat.GetFavoriteFood());
+                // Missatges
 
-            // Accioons luchy
-            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("\nActions:");
-            myCat.Meow();
-            myCat.Play();
-            myCat.Wash();
-            myCat.Eat();
-            myCat.Hunt();
+                Console.WriteLine("Lamp 1: IsOn = " + lamp1.GetIsOn() + ", Color = " + lamp1.GetColor());
+                Console.WriteLine("Lamp 2: IsOn = " + lamp2.GetIsOn() + ", Color = " + lamp2.GetColor());
+                Console.WriteLine("Lamp 3: IsOn = " + lamp3.GetIsOn() + ", Color = " + lamp3.GetColor());
+            }
+            catch (ArgumentException ex)
+            {
+               
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }
