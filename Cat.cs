@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace T3Activitats
 {
-    public class ClassT3
+    public class Cat
     {
 
     }
