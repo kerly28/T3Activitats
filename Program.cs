@@ -6,23 +6,30 @@ namespace T3Activitats
     {
         public static void Main()
         {
+            // Bike 1
+           
+                Bike bike1 = new Bike("Mountain", "Red", 20); 
+                Console.WriteLine("Bike 1:\n -Type = " + bike1.GetType() + "\n -Color = " + bike1.GetColor() + "\n -Speed = " + bike1.GetSpeed());
+                Console.WriteLine("-------------------------------------------------");
+
+            // Bike 2
             try
             {
-                Lamp lamp1 = new Lamp(true, "Red");
-                Lamp lamp2 = new Lamp(false, ""); 
-                Lamp lamp3 = new Lamp(true, "Green");
-
-                // Missatges
-
-                Console.WriteLine("Lamp 1: IsOn = " + lamp1.GetIsOn() + ", Color = " + lamp1.GetColor());
-                Console.WriteLine("Lamp 2: IsOn = " + lamp2.GetIsOn() + ", Color = " + lamp2.GetColor());
-                Console.WriteLine("Lamp 3: IsOn = " + lamp3.GetIsOn() + ", Color = " + lamp3.GetColor());
+                Bike bike2 = new Bike("", "Blue", 15); 
+                Console.WriteLine("Bike 2: \n -Type = " + bike2.GetType() + " \n -Color = " + bike2.GetColor() + "\n -Speed = " + bike2.GetSpeed());
+                Console.WriteLine("-------------------------------------------------");
             }
             catch (ArgumentException ex)
             {
-                
-                Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error en Bike 2: " + ex.Message);
+                Console.WriteLine("-------------------------------------------------");
             }
+
+            //Bike 3
+           
+                Bike bike3 = new Bike("Road", "Green", -5); 
+                Console.WriteLine("Bike 3: \n -Type = " + bike3.GetType() + "\n -Color = " + bike3.GetColor() + "\n -Speed = " + bike3.GetSpeed());
+                Console.WriteLine("-------------------------------------------------");       
         }
     }
 }
