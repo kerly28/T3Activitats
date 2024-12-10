@@ -13,7 +13,7 @@ namespace T3Activitats
             //numero de jugadors
             Player[] teamPlayers = new Player[] { player1, player2, player3 };
             //nom del equip
-            Team team = new Team("Las Sirenas", teamPlayers);
+            Team team = new Team("The mermaids", teamPlayers);
             //mostrar equip
             Console.WriteLine("Team: " + team.GetTeamName());
             Console.WriteLine("Players:");
