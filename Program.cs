@@ -6,24 +6,24 @@ namespace T3Activitats
     {
         public static void Main()
         {
-            // gatito
-            Cat myCat = new Cat("Luchy", 3, "Snowshoe", "Salmon");
+            Turtle turtle = new Turtle("Michelangelo", 100, 15, "freshwater");
+            Wolf wolf = new Wolf("Taylor", 7, "gray", "Bella");
+            Iguana iguana = new Iguana("Pascal", 5, "green", 1);
 
-            // Informacio Luchy
-            Console.WriteLine("Cat Info:");
-            Console.WriteLine("Name: " + myCat.GetName());
-            Console.WriteLine("Age: " + myCat.GetAge());
-            Console.WriteLine("Breed: " + myCat.GetBreed());
-            Console.WriteLine("Favorite Food: " + myCat.GetFavoriteFood());
+            Console.WriteLine("---------------------");
+            Console.WriteLine($"Turtle: {turtle.Name}\nAge: {turtle.Age}\nShell Size: {turtle.SizeShell}\nType of Water: {turtle.TypeWater}");
+            turtle.Sound();
 
-            // Accioons luchy
-            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("\nActions:");
-            myCat.Meow();
-            myCat.Play();
-            myCat.Wash();
-            myCat.Eat();
-            myCat.Hunt();
+            Console.WriteLine("---------------------");
+            Console.WriteLine($"Wolf: {wolf.Name}\nAge: {wolf.Age}\nColour Type: {wolf.ColourType}\nToday's Food: {wolf.TodayFood}");
+            wolf.Sound();
+
+            Console.WriteLine("---------------------");
+            Console.WriteLine($"Iguana: {iguana.Name}\nAge: {iguana.Age}\nColour: {iguana.Colour}\nTail Length: {iguana.Tail}");
+            iguana.Eat();
+
         }
+
+
     }
 }

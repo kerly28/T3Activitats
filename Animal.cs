@@ -1,18 +1,16 @@
-﻿public class Animal
+﻿using System;
+
+namespace T3Activitats
 {
-    private string name;
-    private int age;
-
-    public string GetName() { return name; }
-    public int GetAge() { return age; }
-
-    public void SetName(string name) { this.name = name; }
-    public void SetAge(int age) { this.age = age; }
-
-    // Constructor
-    public Animal(string name, int age)
+    public class Animal
     {
-        SetName(name);
-        SetAge(age);
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        public Animal(string name, int age)
+        {
+            this.Name = name;
+            this.Age = age;
+        }
     }
 }
