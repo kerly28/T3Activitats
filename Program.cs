@@ -1,11 +1,12 @@
-﻿using System;
+using System;
 
 namespace T3Activitats
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
+
             //Vehicle
             Vehicle1 vehicle = new Vehicle1("Generic Vehicle");
             Console.WriteLine($"Vehicle: {vehicle.Name}\n");
@@ -27,6 +28,7 @@ namespace T3Activitats
             //Cotxe de treball
             WorkCar workCar = new WorkCar("TMB", 8, "Bus", 120, "Public");
             Console.WriteLine($"WorkCar: {workCar.Name}, Wheels: {workCar.Wheels}, Type: {workCar.Type}, Speed: {workCar.Speed} km/h, Work Type: {workCar.TypeWorkCar}\n");
+
         }
     }
 }
