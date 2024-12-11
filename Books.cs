@@ -18,7 +18,7 @@ namespace T3Activitats
         //Comportaments
         public void ShowChapters()
         {
-            Console.WriteLine("The book has {0} chapters", Chapters);
+            Console.WriteLine("The book has {0} chapters:", Chapters);
         }
 
         public void ShowISBN()
