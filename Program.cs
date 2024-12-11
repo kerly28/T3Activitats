@@ -2,7 +2,7 @@
 
 namespace T3Activitats
 {
-    public class Program
+    class Program
     {
         public static void Main()
         {
@@ -21,7 +21,6 @@ namespace T3Activitats
             Console.WriteLine("---------------------");
             Console.WriteLine($"Iguana: {iguana.Name}\nAge: {iguana.Age}\nColour: {iguana.Colour}\nTail Length: {iguana.Tail}");
             iguana.Eat();
-
         }
 
 
